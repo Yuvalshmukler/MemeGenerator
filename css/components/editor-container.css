@@ -1,0 +1,79 @@
+.editor-tools {
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--var3);
+    padding: 5rem 7rem;
+    margin-top: 3rem;
+    border-radius: 5rem;
+    margin-left: 3rem;
+
+}
+
+.editor-container .line-input {
+    background-color: unset;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--var4);
+    color: rgb(254, 254, 254);
+    cursor: pointer;
+    width: 70%;
+    
+}
+.line-editor{
+    border-radius: 1rem;
+    background-color: var(--var2);
+    padding: 3px;
+}
+.editor-container {
+    display: none;
+    background-color: var(--var1);
+    grid-template-columns: repeat(2,1fr);
+
+}
+
+.editor-tools button {
+    border: none;
+    width: 75px;
+    cursor: pointer;
+
+    border-radius: 4rem;
+    font-size: 22px;
+    height: 2.5rem;
+    width: 3.5rem;
+    margin: 4px;
+    object-fit: fill;
+    background-color: var(--var4)
+}
+
+.editor-tools button:hover {
+    background-image: var(--var1);
+}
+
+.canvas-container {
+    width: 500px;
+    height: 500px;
+    margin-top: 3rem;
+    border: none;
+}
+
+input[type='color'] {
+    margin-top: 1rem;
+    -webkit-appearance: none;
+    width: 40px;
+    border-radius: 3px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+
+}

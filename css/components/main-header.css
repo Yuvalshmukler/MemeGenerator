@@ -1,0 +1,39 @@
+.main-header {
+    border-radius: 7rem;
+    background: var(--var1);
+    margin: 1rem 1rem;
+    height: 5rem;
+}
+
+.header-contant {
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+.main-logo {
+    font-family: lobster;
+    font-size: 2.5rem;
+    color: #3d3a3a;
+}
+.main-nav a {
+    height: 2rem;
+    border: none;
+    background-color: unset;
+    border-radius: 3rem;
+    width: 5rem;
+}
+
+.main-header .menu {
+    background-color: var(--cr19);
+    border: none;
+    color: var(--clr3);
+    font-size: 1.7rem;
+    display: none;
+}
+#myCanvas{
+    border-radius:11px;
+}

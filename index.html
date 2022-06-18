@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GetMeme</title>
+</head>
+<img src="" alt="">
+
+<body onload="init()">
+    <div class="main-screen" onclick="toggleMenu(this)"></div>
+    <header class="main-header flex align-center">
+        <div class="header-contant main-layout flex space-between">
+            <div class="main-logo flex" onclick="onShowGallery()">GetMeme.</div>
+            <nav class="main-nav flex">
+                <ul class="clean-list ">
+                    <li onclick="onShowGallery()"><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Saved</a></li>
+                </ul>
+            </nav>
+            <button class="menu" onclick="toggleMenu()">☰</button>
+
+        </div>
+    </header>
+    </div>
+    <main class="main-content main-layout">
+        <div class="search-container">
+            <!--  <input type="text" placeholder="Enter search keyword"> -->
+
+            <div class="keywords-container"></div>
+            <div class="gallery-container main-layout grid"></div>
+    </main>
+    <div class="info-conteiner">
+
+    </div>
+    <footer>
+        <div class="footer-logo"></div>
+    </footer>
+
+    <!-- editor area -->
+    <div class="editor-container flex align-center main-layout justify-content">
+        <div class="canvas-container grid">
+            <canvas class="canvas" id="myCanvas" width="500" height="500" style="border: 1px solid black;">
+            </canvas>
+        </div>
+        <div class="editor-tools">
+            <input class="line-input" type="text" onclick="clearPlaceholder()" oninput="onInputText(this.value)"
+                placeholder="Enter your text here">
+            <div class="line-editor">
+                <button onclick="onLineDown()"><i class="fa-solid fa-up-long"></i></button>
+                <button onclick="onLineUp()"><i class="fa-solid fa-down-long"></i></button>
+                <button onclick="onSwitchLines()">
+                    <i class="fa-solid fa-up-long"></i>
+                    <i class="fa-solid fa-down-long"></i>
+                </button>
+                <button onclick="onAddLine()"><i class="fa-solid fa-plus"></i></button>
+                <button onclick="onDeleteLine()"><i class="fa-solid fa-trash"></i></button>
+            </div>
+            <div class="text-editor">
+                <button onclick="onChangeFontSize(+10)">A+</button>
+                <!-- onclick="onChangeFontSize(-10)" -->
+                <button onclick="onChangeFontSize(-10)">A-</button>
+                <button onclick="onAlignLeft()"><i class="fa-solid fa-align-left"></i></button>
+                <button onclick="onAlignRight()"><i class="fa-solid fa-align-right"></i></button>
+                <button onclick="onAlignCenter()"><i class="fa-solid fa-align-justify"></i></button>
+            </div>
+            <div>
+                <input type="color" class="color-input" onchange="onChangeFillColor(this.value)">
+                <input type="color" class="color-input" onchange="onChangeStrokeColor(this.value)">
+                <select name="" id="font-option" onclick="onChangeFontFamily(this.value)">
+                    <option value="Impact">Impact</option>
+                    <option value="Ariel">Ariel</option>
+                    <option value="Lucida Sans">Lucida Sans</option>
+                    <option value="Georgia">Georgia</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/fe6ae7baff.js" crossorigin="anonymous"></script>
+<script src="js/util.js"></script>
+<script src="js/meme-services.js"></script>
+<script src="js/gallery-controller.js"></script>
+<script src="js/meme-controller.js"></script>
+
+</html>

@@ -1,0 +1,16 @@
+.main-screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--crl18);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+body.open-menu .main-screen {
+    opacity: 1;
+    pointer-events: auto;
+}
+.main-nav {
+    z-index: 10;
+}

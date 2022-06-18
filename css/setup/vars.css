@@ -1,0 +1,10 @@
+:root {
+    --var1: linear-gradient(to right, #fcb487, #DD5E89);
+    --var2: #383838;
+    --var3: #313030;
+    --var4: #636161;
+}
+
+
+
+/* --var2: linear-gradient(115deg, #bd6bb9 0, #d68dd6 50%, #dc8de9 100%); */

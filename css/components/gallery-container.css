@@ -1,0 +1,19 @@
+.gallery-container {
+    background: linear-gradient(to right, #F7BB97, #DD5E89);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8vw;
+    column-gap: 0px;
+    margin: auto;
+    width: 68rem;
+    padding: 5rem 1.8rem 1.8rem 1.8rem;
+    border-radius: 8px;
+    
+}
+
+.gallery-container img {
+    object-fit: contain;
+    text-align: center;
+    width: 12rem;
+    border-radius: 5px;
+
+}
